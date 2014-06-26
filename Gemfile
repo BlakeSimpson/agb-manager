@@ -1,0 +1,10 @@
+source "http://rubygems.org"
+
+gem "sinatra"
+gem "haml"
+gem "sass"
+gem "compass"
+gem "kramdown"
+gem "mysql2"
+gem "activerecord"
+gem "sinatra-activerecord"

@@ -1,0 +1,32 @@
+.col.editting
+  %form{method: "post", action: "/save"}
+    .col-header
+      .header-controls
+        .saved-note Saved!
+        %button.btn.action.save{type: :submit, name: :save}
+          %i.fa.fa-check
+          Save
+
+      %h2.page-title= "Manage \"#{@current_locale}\""
+
+    %input.locale{type: :hidden, name: :locale, value: @current_locale}
+    %textarea{name: :content, placeholder: "Enter AGB content in Markdown format"}
+
+
+  %p
+    Markdown syntax, for help:
+    %a{href: "https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet", target: "_blank"} Markdown Cheatsheet
+
+.col.preview
+  .col-header
+    .header-controls
+      .unsaved-note Previewing changes
+      %a.btn{href: "/export.html?locale=#{@current_locale}"}
+        %i.fa.fa-download
+        Export
+
+    %h3.page-title Preview
+
+  .preview-content
+
+.original-content= CGI::escapeHTML(@entry.content || "")

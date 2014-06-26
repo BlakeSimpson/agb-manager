@@ -1,0 +1,58 @@
+.masthead
+  border-bottom: 1px solid #ddd
+  margin: 0
+  background: #fff
+  +background-image(linear-gradient($col-border, #fff 20%))
+  +box-shadow(rgba(0,0,0,0.1) 0 1px 2px 2px)
+
+  .title
+    font-size: $font-m * 3
+    padding: ($space * 1.5) 0
+    text-align: left
+    float: left
+
+  .locale-switcher
+    float: right
+    margin: 35px 0 0
+    padding: $space/2
+    background: $col-vibrant
+    color: #fff
+    line-height: 14px
+    +border-radius(4px)
+
+    &:hover
+      background: $col-vibrant-hue
+      cursor: pointer
+
+    .locale-item
+      a
+        display: block
+        text-decoration: none
+        color: #fff
+        padding: $space/4 $space/2
+        min-width: 70px
+        +border-radius(4px)
+        +clearline
+
+        &:hover
+          background: $col-vibrant-hue
+
+      .flag, .carot, .name
+        float: left
+        margin: 0 3px
+        font-style: normal
+
+      .carot
+        margin: 0 0 0 5px
+        padding-top: 1px
+        font-size: 10px
+
+    .available-locales
+      display: none
+      list-style-type: none
+      margin: 0
+      padding: 0
+      position: absolute
+      background: $col-vibrant
+      margin: -25px 0 0 -10px
+      +border-radius(4px)

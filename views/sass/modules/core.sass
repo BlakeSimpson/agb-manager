@@ -1,0 +1,46 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  font-size: $font-m
+  font-family: $font-family
+  background: #eee url("/img/fabric_of_squares_gray.png") repeat
+  color: $col-text
+
+  ::selection
+    background: $col-vibrant
+    color: #fff
+
+  a
+    color: $col-vibrant
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+      color: $col-vibrant-hue
+
+  .clearline
+    +clearline
+
+  .wrapper
+    width: 90%
+    margin: 0 auto
+
+    .col
+      float: left
+      width: 47.9%
+      padding: 0 2%
+
+      &.editting
+        border-right: 1px solid $col-border
+        padding-left: 0
+      &.preview
+        border-left: 1px solid $col-border
+        margin: 0 0 0 -1px
+        padding-right: 0
+
+    .col-header
+      border-bottom: 1px solid $col-border
+      width: 100%
+      margin: 0 0 ($space / 2) 0
