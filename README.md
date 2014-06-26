@@ -2,7 +2,7 @@
 
 This project acts as a markdown preview and storage engine, with the original intent of managing "AGB's" (terms and conditions) documents over various languages.
 
-The application allows the creating, editing and exporting of HTML documents for multiple languages. 
+The application allows the creating, editing and exporting of HTML documents for multiple languages via Markdown input. 
 
 ## Technologies
 
